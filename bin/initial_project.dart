@@ -23,19 +23,21 @@ void main(List<String> arguments) {
   //     'Do I consider myself a geek? $geek.\n'
   //     'I\'m $age years old and $height meters tall.';
 
-  String name1 = "Victor";
-  String name2 = "Felipe";
-  String name3 = "Paula";
-  String name4 = "Mikael";
-  String name5 = "Beatriz";
+  // String name1 = "Victor";
+  // String name2 = "Felipe";
+  // String name3 = "Paula";
+  // String name4 = "Mikael";
+  // String name5 = "Beatriz";
+  //
+  // List<String> nameList = ["Victor", "Felipe", "Paula", "Mikael", "Beatriz"];
 
-  List<String> nameList = ["Victor", "Felipe", "Paula", "Mikael", "Beatriz"];
+  List<dynamic> victor = [24, 1.7, true, 'Victor Kauan', 'VK'];
 
-  print('$name1 $name2 $name3 $name4 $name5');
-  print(nameList);
+  String dynamicGreetingSentence = 'I\'m ${victor[4]} but my real name is:'
+      ' ${victor[3]}.\n'
+      'Do I consider myself a geek? ${victor[2]}.\n'
+      'I\'m ${victor[0]} years old and ${victor[1]} meters tall.';
 
-  print(name1);
-  print(nameList[0]);
-
-  print(nameList.length);
+  print(victor);
+  print(dynamicGreetingSentence);
 }
