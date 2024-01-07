@@ -55,7 +55,25 @@ void main(List<String> arguments) {
   // print(victor);
   // print(dynamicGreetingSentence);
 
-  for (int i = 1; i < 5; i++) {
-    print("I completed $i lap(s).");
+  // for (int i = 1; i < 5; i++) {
+  //   print("I completed $i lap(s).");
+  // }
+
+  int whileStamina = 100;
+  while (whileStamina > 0) {
+    print("My current stamina is $whileStamina.");
+
+    whileStamina -= 6;
+  }
+
+  int doWhileStamina = 100;
+  do {
+    print("My current stamina is $doWhileStamina.");
+
+    doWhileStamina -= 6;
+  } while (doWhileStamina > 0);
+
+  for (int i = 100; i > 0; i -= 6) {
+    print("My current stamina is $i.");
   }
 }
