@@ -24,6 +24,13 @@ void main(List<String> arguments) {
   // final String username = "VK";
   final String username;
   username = "VK";
+  bool ofLegalAge;
+
+  if (age >= 18) {
+    ofLegalAge = true;
+  } else {
+    ofLegalAge = false;
+  }
 
   // String greetingSentence = 'I\'m $username but my real name is: $name.\n'
   //     'Do I consider myself a geek? $geek.\n'
@@ -42,7 +49,8 @@ void main(List<String> arguments) {
   String dynamicGreetingSentence = 'I\'m ${victor[4]} but my real name is:'
       ' ${victor[3]}.\n'
       'Do I consider myself a geek? ${victor[2]}.\n'
-      'I\'m ${victor[0]} years old and ${victor[1]} meters tall.';
+      'I\'m ${victor[0]} years old and ${victor[1]} meters tall.\n'
+      'Am I of legal age? $ofLegalAge';
 
   print(victor);
   print(dynamicGreetingSentence);
